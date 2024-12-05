@@ -6,6 +6,7 @@
       <th>Meet Name</th>
       <th>Location</th>
       <th>Day & Time</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
