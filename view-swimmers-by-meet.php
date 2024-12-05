@@ -1,4 +1,4 @@
-<h1>Swimmers Competing in this Meet</h1>
+<h1>Swimmers Competing in This Meet</h1>
 <table class="table table-striped">
   <thead>
     <tr>
