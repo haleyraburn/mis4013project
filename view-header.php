@@ -29,7 +29,7 @@
           <a class="nav-link" href="events.php">Event List</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="meets-with-swimmers.php">Swimmers @ Meets</a>
+          <a class="nav-link" href="meets-with-swimmers.php">Meet Info</a>
         </li>
       </ul>
     </div>
