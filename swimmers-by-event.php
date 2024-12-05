@@ -4,7 +4,7 @@ require_once("model-swimmers-by-event.php");
 
 $pageTitle = "Swimmers in this Event";
 include "view-header.php";
-$swimmers = selectSwimmersbyEvent($_GET['name']);
+$swimmers = selectSwimmersbyEvent($_GET['sname']);
 include "view-swimmers-by-event.php";
 include "view-footer.php";
 ?>
