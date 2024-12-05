@@ -14,7 +14,12 @@
         <tr>
           <td><?php echo $event['event_id']; ?></td>
           <td><?php echo $event['event_name']; ?></td>
-          <td><a href="swimmers-by-event.php?id=<?php echo $event['event_id']; ?>">Swimmers</a></td>
+          <td>
+            <form mehtod="post" action="swimmers-by-event.php">
+              <input type="hidden" name="id" value="<?php echo $event['event_id']; ?>">
+              <button type="submit" class="btn btn-primary">Swimmers</button>
+            </form>
+          </td>
         </tr>
       <?php
       }
