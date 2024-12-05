@@ -4,6 +4,8 @@
     <tr>
       <th>ID</th>
       <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
     </tr>
   </thead>
   <tbody>
@@ -13,6 +15,8 @@
         <tr>
           <td><?php echo $swimmer['swimmer_id']; ?></td>
           <td><?php echo $swimmer['swimmer_name']; ?></td>
+          <td><?php echo $swimmer['swimmer_age']; ?></td>
+          <td><?php echo $swimmer['swimmer_gender']; ?></td>
         </tr>
       <?php
       }
