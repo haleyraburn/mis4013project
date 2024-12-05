@@ -2,7 +2,7 @@
 function selectSwimmersByEvent($sid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT s.swimmer_id, swimmer_name FROM swimmer");
+        $stmt = $conn->prepare("SELECT swimmer_id, swimmer_name FROM swimmer");
         $stmt->bind_param("i", $sid);
         $stmt->execute();
         $result = $stmt->get_result();
