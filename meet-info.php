@@ -1,7 +1,4 @@
 <?php
-require_once("util-db.php");
-require_once("model-meet-info.php");
-
 $pageTitle = "Meet Info";
 include "view-header.php";
 $meets = selectMeets();
