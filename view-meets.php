@@ -2,7 +2,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>IDth>
+      <th>ID</th>
       <th>Meet Name</th>
       <th>Location</th>
       <th>Day & Time</th>
