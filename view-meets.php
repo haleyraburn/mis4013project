@@ -10,13 +10,13 @@
   </thead>
   <tbody>
     <?php
-      while ($swimmer = $swimmers->fetch_assoc()) {
+      while ($meet = $meets->fetch_assoc()) {
     ?>
         <tr>
-          <td><?php echo $swimmer['meet_id']; ?></td>
-          <td><?php echo $swimmer['meet_name']; ?></td>
-          <td><?php echo $swimmer['meet_location']; ?></td>
-          <td><?php echo $swimmer['meet_daytime']; ?></td>
+          <td><?php echo $meet['meet_id']; ?></td>
+          <td><?php echo $meet['meet_name']; ?></td>
+          <td><?php echo $meet['meet_location']; ?></td>
+          <td><?php echo $meet['meet_daytime']; ?></td>
         </tr>
       <?php
       }
