@@ -18,6 +18,7 @@
           <td><?php echo $meet['meet_name']; ?></td>
           <td><?php echo $meet['meet_location']; ?></td>
           <td><?php echo $meet['meet_daytime']; ?></td>
+          <td><a href="swimmers-by-meet.php?sid=<?php echo $meet['meet_id']; ?>">Swimmers</a></td>
         </tr>
       <?php
       }
