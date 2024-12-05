@@ -2,7 +2,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
       <th>Name</th>
     </tr>
   </thead>
@@ -11,7 +10,6 @@
       while ($swimmer = $swimmers->fetch_assoc()) {
     ?>
         <tr>
-          <td><?php echo $swimmer['swimmer_id']; ?></td>
           <td><?php echo $swimmer['swimmer_name']; ?></td>
         </tr>
       <?php
