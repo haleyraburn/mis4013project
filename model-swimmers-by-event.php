@@ -2,8 +2,8 @@
 function selectSwimmersByEvent($sname) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT swimmer_name FROM swimmer");
-        $stmt->bind_param("i", $sname);
+        $stmt = $conn->prepare("SELECT swimmer_name FROM swimmer WHERE swimmer_name=?");
+        $stmt->bind_param("s", $sname);
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
