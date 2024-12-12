@@ -18,7 +18,7 @@
           <div class="mb-3">
             <label for="sName" class="form-label">Name</label>
             <?php
-              $swimmerList = selectSwimmerForInput();
+              $swimmerList = selectSwimmersForInput();
               include "view-swimmer-input-list.php";
             ?>
           </div>
