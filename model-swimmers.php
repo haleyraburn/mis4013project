@@ -17,7 +17,7 @@ function insertSwimmer($sName, $sAge, $sGender) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO swimmer (swimmer_name, swimmer_age, swimmer_gender) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $sName, $sAge, $sGender);
+        $stmt->bind_param("sis", $sName, $sAge, $sGender);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -31,7 +31,7 @@ function updateSwimmer($sName, $sAge, $sGender, $sid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update swimmer set swimmer_name = ?, swimmer_age = ?, swimmer_gender = ? where swimmer_id = ?");
-        $stmt->bind_param("sssi", $sName, $sAge, $sGender, $sid);
+        $stmt->bind_param("sisi", $sName, $sAge, $sGender, $sid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
