@@ -11,7 +11,8 @@ if (isset($_POST['actionType'])) {
         if (insertSwimmer($_POST['sName'], $_POST['sAge'], $_POST['sGender'])) {
         echo '<div class="alert alert-success" role="alert">Swimmer added.</div>';
         } else {
-        } echo '<div class="alert alert-danger" role="alert">Error adding swimmer.</div>';
+        echo '<div class="alert alert-danger" role="alert">Error adding swimmer.</div>';
+        }
         break;
     }
   }
