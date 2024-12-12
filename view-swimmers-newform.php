@@ -17,10 +17,7 @@
         <form method ="post" action="">
           <div class="mb-3">
             <label for="sName" class="form-label">Name</label>
-            <?php
-              $swimmerList = selectSwimmersForInput();
-              include "view-swimmer-input-list.php";
-            ?>
+            <input type="text" class="form-control" id="sName" name="sName">
           </div>
           <div class="mb-3">
             <label for="sAge" class="form-label">Age</label>
@@ -28,7 +25,10 @@
           </div>
           <div class="mb-3">
             <label for="sGender" class="form-label">Gender</label>
-            <input type="text" class="form-control" id="sGender" name="sGender">
+            <?php
+              $genderList = selectGenderForInput();
+              include "view-gender-input-list.php";
+            ?>
           </div>
           <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Add Swimmer</button>
