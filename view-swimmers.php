@@ -29,6 +29,9 @@
           <td><?php echo $swimmer['swimmer_age']; ?></td>
           <td><?php echo $swimmer['swimmer_gender']; ?></td>
           <td> 
+            <?php
+              include "view-swimmers-editform.php";
+            ?>
           </td>
           <td>
           <form method="post" action="">
