@@ -25,10 +25,7 @@
           </div>
           <div class="mb-3">
             <label for="sGender" class="form-label">Gender</label>
-            <?php
-              $genderList = selectGenderForInput();
-              include "view-gender-input-list.php";
-            ?>
+            <input type="text" class="form-control" id="sGender" name="sGender">
           </div>
           <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Add Swimmer</button>
