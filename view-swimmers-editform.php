@@ -27,7 +27,7 @@
             <label for="sGender<?php echo $swimmer['swimmer_id']; ?>" class="form-label">Gender</label>
             <input type="text" class="form-control" id="sGender<?php echo $swimmer['swimmer_id']; ?>" name="sGender" value="<?php echo $swimmer['swimmer_gender']; ?>">
           </div>
-          <input type="hidden" name="sid" value="<?php echo $swimmer['swimmer_gender']; ?>">
+          <input type="hidden" name="sid" value="<?php echo $swimmer['swimmer_id']; ?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Edit Swimmer</button>
         </form>
