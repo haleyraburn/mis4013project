@@ -3,7 +3,7 @@ include "view-header.php";
 ?>
 <h1>OU Club Swimming</h1>
   <div class="grid-container">
-    <img src="https://www.instagram.com/ouswimclub/p/DCc2x2wST8D/" alt="Photo 1">
+    <img src="https://www.instagram.com/p/DCc2x2wST8D/" alt="Photo 1">
     <img src="" alt="Photo 2">
     <img src="" alt="Photo 3">
     <img src="" alt="Photo 4">
