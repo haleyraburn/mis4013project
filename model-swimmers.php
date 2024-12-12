@@ -55,10 +55,10 @@ function deleteSwimmer($sid) {
     }
 }
 
-function selectSwimmersForInput() {
+function selectGenderForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT swimmer_id, swimmer_name FROM swimmer ORDER BY swimmer_name");
+        $stmt = $conn->prepare("SELECT swimmer_gender FROM swimmer ORDER BY swimmer_gender");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
