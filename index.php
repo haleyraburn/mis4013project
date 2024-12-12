@@ -11,8 +11,5 @@ Follow our Instagram here!
     </button>
 </a>
 <?php
-include "index-photos.php"
-?>
-<?php
 include "view-footer.php";
 ?>
