@@ -29,6 +29,7 @@
             <label for="sGender" class="form-label">Gender</label>
             <input type="text" class="form-control" id="sGender" name="sGender">
           </div>
+          <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Add Swimmer</button>
         </form>
       </div>
